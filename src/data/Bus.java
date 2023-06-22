@@ -1,26 +1,29 @@
 package data;
 
-public class Avanza implements Car,isMaintenance
+public class Bus implements Car
 {
-
+    @Override
     public void drive()
     {
-        System.out.println("Avanza drive");
+        System.out.println("Bus going");
     }
-
 
     public int getTier()
     {
-        return 4;
+        return 8;
     }
 
     @Override
     public String getBrand()
     {
-        return "Toyota";
+        return "Hino";
     }
 
     @Override
+    public boolean isBig()
+    {
+        return true;
+    }
     public boolean isMaintenance()
     {
         return false;
